@@ -1,7 +1,11 @@
-import React from 'react'
 
-export default function Button() {
+import { Button } from "@/stories/types";
+import React from "react";
+
+export default function Button({ name }: Button) {
   return (
-    <div>Boton de prueba</div>
-  )
+    <>
+      <div>{name}</div>
+    </>
+  );
 }
