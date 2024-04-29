@@ -1,13 +1,11 @@
 import React from "react";
 
 export interface Button{
-  name: string
+  text: string
 }
 
-export default function Button({ name }: Button) {
+export default function Button({ text }: Button) {
   return (
-    <>
-      <div>{name}</div>
-    </>
+      <button>{text}</button>
   );
 }
