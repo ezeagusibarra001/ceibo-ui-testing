@@ -37,14 +37,13 @@ export default [{
     postcss({
       extensions: ['.css']
     }),
-    json(),
     sucrase({
       exclude: ['node_modules/**'],
       transforms: ['typescript', 'jsx'],
     })
   ]
 }, {
-  input: 'lib/index.d.ts',
+  input: 'lib/index.js',
   output: [{ file: 'lib/index.d.ts', format: 'es' }],
   plugins: [dts()],
   external: [/\.css$/]

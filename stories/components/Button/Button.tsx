@@ -1,6 +1,8 @@
-
-import { Button } from "@/stories/types";
 import React from "react";
+
+export interface Button{
+  name: string
+}
 
 export default function Button({ name }: Button) {
   return (
