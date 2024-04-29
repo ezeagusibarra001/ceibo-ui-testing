@@ -44,7 +44,7 @@ export default [{
     })
   ]
 }, {
-  input: 'stories/types/index.d.ts', // Change input path to src/index.d.ts or your typings file
+  input: 'lib/index.d.ts',
   output: [{ file: 'lib/index.d.ts', format: 'es' }],
   plugins: [dts()],
   external: [/\.css$/]
